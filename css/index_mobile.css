@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+
+@media all and (max-width:768px) {
+
+    /* 공통 스타일 */
+    .content_inner {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .sub_title {
+        margin-bottom: 30px;
+    }
+
+    .sub_title h4 {
+        font-size: 32px;
+        font-size: 2rem;
+        color: #333;
+        font-weight: 500;
+        font-style: italic;
+    }
+    /* header */
+    header .gnb ul li a {
+        font-size: 14px;
+        font-size: 0.875rem;
+        color: #fff;
+        padding: 5px 5px;
+        line-height: 20px;
+    }
+    /* title */
+    .title_box .title h2 {
+        font-size: 32px;
+        font-size: 2rem;
+    }
+
+    .title_box .title p {
+        font-size: 18px;
+        font-size: 1rem;
+    }
+
+    main {
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    /* 자기 소개 */
+    main .intro {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    main .intro .intro_box {
+        flex-direction: column;
+    }
+
+    main .intro .intro_box .img_box {
+        width: 40%;
+        min-width: 0px;
+        height: auto;
+    }
+
+    main .intro .intro_box .intro_caption {
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    /* 교육, 스킬 */
+    main .content {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    main .content .content_box {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    main .content .content_box ul {
+        width: 100%;
+        padding: 130px 20px 20px 20px;
+        box-sizing: border-box;
+    }
+
+    main .content .content_box ul li {
+        margin-bottom: 20px;
+    }
+
+    .left_content {
+        background: url(../image/edu1.png) no-repeat center 30px;
+        background-size: 80px;
+    }
+
+    .right_content {
+        background: url(../image/skill1.png) no-repeat center 20px;
+        background-size: 80px;
+    }
+
+    /* portfolio */
+    main .portfolio {}
+
+    main .portfolio .portfolio_box {
+        flex-direction: column;
+        gap: 0px;
+        padding: 20px 0 50px 0;
+    }
+
+    main .portfolio .portfolio_box .portfolio_content {
+        width: 100%;
+        padding: 16px 10% 32px;
+        margin-bottom: 16px;
+    }
+
+    /* contact */
+    .contact_box .contact_title h2 {
+        font-size: 32px;
+        font-size: 2rem;
+    }
+
+    .contact_box .contact_title p {
+        font-size: 18px;
+        font-size: 1rem;
+    }
+
+
+    /* 애니메이션 오브젝트 */
+    .title_box .object01 {
+        width: 450px;
+        height: 450px;
+        left: -60%;
+    }
+
+    .title_box .object02 {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* js제어 오브젝트 */
+    .contact_box .object03 {
+        width: 450px;
+        height: 450px;
+        right: -60%;
+        transform: translateX(-30%);
+        z-index: 444;
+    }
+    .contact_box .object04 {
+        width: 300px;
+        height: 300px;
+        bottom: -20%;
+        z-index: 333;
+        transform: translateX(-105%);
+    }
+
+    /* 오브젝트 애니메이션 */
+    @keyframes moveObject01 {
+        0% {}
+
+        100% {
+            transform: translateX(30%);
+        }
+    }
+    @keyframes moveObject02 {
+        0% {}
+
+        100% {
+            transform: translateX(95%);
+        }
+    }
+
+}
+
+@media all and (max-width:424px) {
+    header .gnb {
+        display: none;
+    }
+}
