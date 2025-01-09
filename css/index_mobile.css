@@ -169,7 +169,7 @@
 
 }
 
-@media all and (max-width:424px) {
+@media all and (max-width:320px) {
     header .gnb {
         display: none;
     }
