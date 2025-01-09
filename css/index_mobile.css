@@ -37,6 +37,8 @@
     .title_box .title p {
         font-size: 18px;
         font-size: 1rem;
+        padding : 0 20px;
+        box-sizing: border-box;
     }
 
     main {
@@ -120,6 +122,8 @@
     .contact_box .contact_title p {
         font-size: 18px;
         font-size: 1rem;
+        padding : 0 20px;
+        box-sizing: border-box;
     }
 
 
