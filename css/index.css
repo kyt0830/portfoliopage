@@ -7,6 +7,9 @@
     font-style: normal;
   } */
 
+html,body{
+    scroll-behavior: smooth;
+}
 /* index.css */
 body {
     font-family: "Noto Sans KR", serif;
