@@ -156,7 +156,7 @@ section.title_box {
 }
 
 .title_box .scroll {
-    width: 40px;
+    width: 56px;
     position: absolute;
     left: 50%;
     bottom: 20px;
@@ -164,7 +164,7 @@ section.title_box {
     z-index: 888;
 
     animation-name: moveScroll;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -314,7 +314,7 @@ main .portfolio .portfolio_box .portfolio_content {
     font-size: 24px;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333
+    color: #333;
 }
 
 .portfolio_content .portfolio_caption p {
@@ -349,31 +349,18 @@ main .portfolio .portfolio_box .portfolio_content {
 }
 
 /* 애니메이션 */
-.portfolio_content .portfolio_caption h5 span.flow {
-    font-size: 18px;
-    font-size: 1.125rem;
-    margin-right: 2px;
+.portfolio_content .portfolio_caption h5 span.box {
+    font-size: 14px;
+    font-size: 0.875rem;
     display: inline-block;
 
-    animation-name: flow;
-    animation-duration: 1.5s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    padding : 3px 8px;
+    border: 1px solid #534a99;
+    border-radius: 6px;
+    background-color: #a989b7;
+    color : #fff;
+    transform: translateY(-3px);
 }
-
-.delay1 {
-    animation-delay: 1s;
-}
-
-.delay2 {
-    animation-delay: 1.2s;
-}
-
-.delay3 {
-    animation-delay: 1.4s;
-}
-
 
 /* contact */
 .contact_box {
@@ -471,10 +458,10 @@ main .portfolio .portfolio_box .portfolio_content {
 
 @keyframes flow {
     0% {
-        transform: translateY(0%);
+        transform: translateY(-10%);
     }
 
     100% {
-        transform: translateY(-30%);
+        transform: translateY(-50%);
     }
 }
